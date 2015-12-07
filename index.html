@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" type="text/css" href="htmlstyle.css">
+
+
+<script src='jquery-1.11.3.js'> </script>
+<script src="javascript.js"></script>
+
+<body id="corpo">
+<h1> Dialogs </h1>
+
+<div class="parent">
+  <div class="one">
+    <a href='javascript:showAlert()'> ALERT </a>
+  </div>
+  <br>
+  <div class="two">
+    <textarea rows="1" cols="43"> dialog.show("alert", "This is an alert"); </textarea>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="parent">
+  <div class="one">
+    <a href='javascript:showConfirm()'> CONFIRM </a>
+  </div>
+  <br>
+  <div class="two">
+    <textarea rows="3" cols="88">  var successCallback = function(){ alert("OK clicked") }
+  var failureCallback = function(){ alert("Cancel clicked") }
+  dialog.show("confirm", "This is a confirmation", successCallback, failureCallback); </textarea>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="parent"> 
+  <div class="one">
+    <a href='javascript:showPrompt()'> PROMPT </a>
+  </div>
+  <br>
+  <div class="two">
+    <textarea rows="3" cols="81">  var successCallback = function(){ alert(dialog.value) }
+  var failureCallback = function(){}
+  dialog.show("prompt", "This is a prompt", successCallback, failureCallback); </textarea>
+  </div>
+</div>
+<br>
+<br>
+<div class="parent">
+  <a href='https://github.com/mateusbtn/AMEfinal'> Click here to download </a>
+
+</body>
+
+</html>

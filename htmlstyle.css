@@ -1,0 +1,13 @@
+.parent {
+    border: 4px solid black;
+    padding: 20px 15px;
+    display: inline-block;
+}
+
+.one .two{
+    margin-right: 60px;
+}
+
+#corpo{
+  background-color: rgba(240,255,240,1)
+}
